@@ -4,7 +4,9 @@ import random
 
 tmp = None
 
-
+# Funkcja kula - wysyłam do niej wartość aaa
+# aby nie zwracała czegoś szczególnego jak user
+# wciśnie q, żeby opuścić zabawę
 def kula(aaa):
     if aaa != "q":
         rnd = random.randint(1, 20)
@@ -12,9 +14,8 @@ def kula(aaa):
         # w zależności od losowania daje wartość odpowiedzi
     else:
         rnd = 404
-        # bo właściwie dlaczego nie
-        return " "
-        # bo ma nie pokazać odpowiedzi
+        # bo właściwie dlaczego nie, byle by nie było od 1 do 20
+        return "Koniec"
     if rnd == 1:
         return "Z mojego punktu widzenia - Tak"
     if rnd == 2:
@@ -61,4 +62,6 @@ while tmp != "q":
     print("Magiczna 8 kula odpowiedź Ci pokaże..chyba, że q wybierzesz")
     tmp = input("Twoje pytanie to:")
     # wali mnie o co pytasz, a jak napiszesz q będzie spacja
+    print("*************************************")
     print(kula(tmp))
+    print("*************************************")
