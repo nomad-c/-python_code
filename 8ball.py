@@ -1,5 +1,5 @@
 # 8 Ball 28.12.2021 Czarny
-# chciałem potrenować funkcję
+# chciałem potrenować funkcje
 import random
 
 tmp = None
