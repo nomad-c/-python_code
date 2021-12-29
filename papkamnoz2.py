@@ -1,4 +1,4 @@
-# papier, kamień nożyczki z tablicą i funkcją 29.12.2021 Czarny
+# papier, kamień nożyczki z tablicą i funkcjami 29.12.2021 Czarny
 # nowości to random.choice(listy)
 # wykorzystanie zmiennej gra do możliwych wyników
 # do trzech razy sztuka z wykorzystaniem for i range
