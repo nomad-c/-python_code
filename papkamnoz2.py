@@ -2,6 +2,7 @@
 # nowości to random.choice(listy)
 # wykorzystanie zmiennej gra do możliwych wyników
 # do trzech razy sztuka z wykorzystaniem for i range
+
 import random
 
 wybor, wybkom = None, None
@@ -34,7 +35,8 @@ def podsumowanie():  # zrobiłem taką funkcję bo to dwa razy robię
 ###############################################################
 # koniec funkcji podsumowanie
 ####################################################
-#  zaczynamy funkcję - Cała gra
+
+
 def calagra(iteracje):
     for i in range(iteracje):  # do iteracji razy sztuka
         print(
@@ -93,17 +95,21 @@ def calagra(iteracje):
             # ale warunek musi być na końcu bo inaczej komunikaty są w złej kolejności
 
 
+###############################################################
+# koniec funkcji calagra
+####################################################
+
 # tu się zaczyna program
-wybor1 = "cokolwiek"
+pytanko = "cokolwiek"
 # zmienna po to, żeby się zapytać czy gra dalej
 # nie mogłem wykorzystać ponownie wybor
-# bo n oznacza nożyczki
+# bo wartość n oznacza nożyczki
 
-while wybor1 != "n":
+while pytanko != "n":
     print("Do trzech razy sztuka")
     print("Papier, Kamień, Nożyczki")
     calagra(3)
     podsumowanie()
-    wybor1 = input("Grasz ponownie ?(t/n):")
+    pytanko = input("Grasz ponownie ?(t/n):")
 podsumowanie()
 # koniec
