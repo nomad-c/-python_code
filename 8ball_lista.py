@@ -1,4 +1,4 @@
-# 8 Ball 29.12.2021 Czarny
+# 8 Ball wersja dwa 29.12.2021 Czarny
 # chciałem potrenować funkcje
 # a ta wersja jest z tablicą (jednowymiarową zwaną przez po angielsku listą)
 import random
@@ -37,7 +37,7 @@ def kula(aaa):
         # w zależności od losowania daje wartość odpowiedzi
     else:
         return "Koniec"
-    return tresci[rnd]
+    return tresci[rnd]  # zwraca zdanie z wylosowanego rzędu
 
 
 ##################################################################
@@ -51,4 +51,4 @@ while tmp != "q":
     print("*************************************")
     print(kula(tmp))
     print("*************************************")
-# Write your code here :-)
+# koniec
