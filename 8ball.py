@@ -61,7 +61,7 @@ def kula(aaa):
 while tmp != "q":
     print("Magiczna 8 kula odpowiedź Ci pokaże..chyba, że q wybierzesz")
     tmp = input("Twoje pytanie to:")
-    # wali mnie o co pytasz, a jak napiszesz q będzie spacja
+    # wali mnie o co pytasz, a jak napiszesz q będzie koniec
     print("*************************************")
     print(kula(tmp))
     print("*************************************")
