@@ -14,11 +14,17 @@ tabela = [
         ['i', '!'],
         ['sto', '100'],
         ['ku', 'Q'],
-        ['r', '4'],
         ['h', '#'],
-        ['t', '7']
+        ['t', '7'],
+        [' ', '-'],
+        ['g', '6'],
+        ['c', '<'],
+        ['w', 'VV']
         ]
-
-wpis = input('Wpisz swój tekst')
-for i = 1 in range(len(wpis))
+wpis2 = ''
+wpis = input('Wpisz swój tekst: ')
+wpis = wpis.lower()
+for i in range(len(wpis)):
+    wpis = wpis.replace(tabela[i][0], tabela[i][1])
+print(wpis)
 
