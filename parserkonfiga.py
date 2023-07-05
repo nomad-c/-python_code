@@ -6,7 +6,8 @@ def read_table_from_csv(file_path):
     with open(file_path, 'r') as csv_file:
         reader = csv.reader(csv_file)
         for row in reader:
-            table.append((row[0], row[1]))
+            if len(row) >= 2:  # Check if the row has at least 2 columns
+                table.append((row[0], row[1]))
     return table
 
 def perform_search():
@@ -19,10 +20,10 @@ def perform_search():
     # Perform search based on the table
     for search_term, output in table:
         if search_term in text:
-            output_text.insert(tk.END, output)
+            output_text.insert(tk.END, output + '\n')
 
 # Read the table from CSV file
-table = read_table_from_csv('table.csv')
+table = read_table_from_csv('E:\\czarny\\OneDrive\\OneDrive - Ingram Micro\\dane\\data.csv')
 
 # Create the main window
 window = tk.Tk()
@@ -42,4 +43,3 @@ search_button.pack()
 
 # Start the GUI event loop
 window.mainloop()
-# Write your code here :-)
